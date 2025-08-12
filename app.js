@@ -1,99 +1,85 @@
-//STRINGS -Texts characters in double or single quotes
-const firstName ="John"
-const lastName ="Doe"
-const middleName ="Dean"
+// CONDITIONAL STATEMENT
+//if statement
+console.log("conditional statement");
+// if(conditional){
+//action
+// lines of code
+//}
+if (1 < 2){
+    console.log("ola");
+}
+let balance = 6000;
+let amount = 2000;
+if (balance >= amount){
+    balance -= amount
+    console.log("Transaction Succesfull, balance is " + balance);
+    
+}
 
-//string properties - length
-console.log(firstName.length, middleName.length);
+//determine if the password is long enough (>= 10)
+const password = "password15#"
+if (password.length >= 10 && password.includes("#")){
+    console.log('passowd is good enough');
+}
 
-// string concatenation( joining of strings + a+ b)
-const fullName = firstName + " " + lastName
-console.log(fullName);
-console.log(fullName.length);
+const age = 18 
+if (age >= 18){
+    console.log('You are eligable to vote');
+}
+//if else 
+    if (9 > 7){
+        console.log("YES")
+    } else{
+        console.log("NO");
+    }
+    if (balance >= amount) {
+      balance -= amount;
+      console.log("Transaction Succesfull, balance is " + balance);
+    } else{
+        console.log("Insufficient Funds");
+    }
 
-// string methods - built in javascript functions that works on strings
-//touppercase, tolowercase
-console.log(fullName.toUpperCase());
-console.log(fullName.toLowerCase());
+    const num = 45
+    if (num > 0){
+        console.log("Possitive");
+    } else{
+        console.log("Negative");
+    }
 
-//startswith, endwith, includes
-console.log(fullName.startsWith("J"));
-console.log(fullName.endsWith("oe"));
-console.log(fullName.includes("n D"));
+    const number = 24
+    if (number % 2 == 0 ){
+        console.log("Even number");
+    } else {
+        console.log("Odd number");
+    }
 
-//replace and replaceAll
-console.log(fullName.replace("o", "#"));
-console.log(fullName.replaceAll("o", "#"));
+    // multiple else if statement
+    // over populated >= 300, under populated <= 50 and balanced > 50 and < 300
+    const censusResult = 50.1;
 
-const myEmail = "blesssingw043@gamil.com"
-console.log(myEmail.length);
-console.log(myEmail.toUpperCase());
-console.log(myEmail.replace("@","*"));
-console.log(myEmail.includes("m"));
-console.log(myEmail.endsWith("google.com"));
+    if (censusResult >= 300){
+        console.log("OVER POPULATED");
+    } else if(censusResult <= 50){
+        console.log("UNDER POPULATED");
+    } else{
+        console.log("BALANCED POPULATION");
+    }
 
-// characterAt, indexOf, lastIndexOf
-// js has a zero based language (assigning position from 0)
-console.log(myEmail.charAt(2));
-console.log(myEmail.indexOf("o"));
-console.log(myEmail.lastIndexOf("o"));
+    // lotery system for a company a b c(winner) 
+    const usersChoiceA = "a"
+    if (usersChoiceA === "c"){
+        console.log("CONGRATULATIONS");
+    } else{
+        console.log("TRY AGAIN");
+    }
 
-//concat, trim, slice, subscribe, substr
-//concat
-console.log(fullName.concat(" is my name"));
- //trim removes whitespaces
- const userName = "    bill   ";
-    console.log(userName);
-    console.log(userName.trim());
-    console.log(userName.trimStart());
-    console.log(userName.trimEnd());
-
-// Method that allows us Extract portions ofba string
-const surName = "Brooke"
-//slice, substring (start, end(none-inclusive))
-console.log(surName.slice(2, 5));
-console.log(surName.substring(1, 5));
-
-//substr(start and numberof characters)
-console.log(surName.substr( 2, 2));
-
- //concatenation
- const author = "chinua Achebe";
- const bookTitle = "Thing Fall Apart";
- const yearPublished = "1997"
- // the book thimgs fall apart written by chainua was published in the year 1997
-//template literals
-const summary = `The book ${bookTitle} was authored by ${author.toUpperCase()}`
-const summry2 = `${author} wrote the book ${bookTitle}`
-console.log(summry2);
-
-//Quote Tinubu said I quote 'Let The Poor Breath'
-const quote = ` Tinubu said I quote 'Let The Poor Breath'`;
-console.log(quote);
-
-const hello = "Hello World"
-console.log(hello.toUpperCase());
-const java = "JAVASCRIPT";
-console.log(java.toLowerCase());
-console.log(hello.charAt(0));
-console.log(hello.slice(6,11));
-const like ="I like cats"
-console.log(like.replace("cats", 'dogs'));
-console.log(hello.startsWith("Hello"));
-const charName = " sokraits papastathopoulos"
-console.log(charName.length);
-const nickName = "BB"
-console.log(nickName);
-const favClub = "sporty" 
-console.log(favClub);
-const result = `I am ${nickName}  and my favourite club is ${favClub}`;
-console.log(result);
-
-
-
-
-
-
-
-
-
+    const usersChoiceB= "a"
+    if (usersChoiceB === "a"){
+        console.log("TRIP TO DUBAI");
+    } else if (usersChoiceB === "c"){
+        console.log("CAR");
+    } else if (usersChoiceB === "d"){
+        console.log(BLENDER);
+    } else{
+        console.log("TRY AGAIN");
+    }
