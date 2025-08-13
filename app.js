@@ -1,85 +1,43 @@
-// CONDITIONAL STATEMENT
-//if statement
-console.log("conditional statement");
-// if(conditional){
-//action
-// lines of code
-//}
-if (1 < 2){
-    console.log("ola");
-}
-let balance = 6000;
-let amount = 2000;
-if (balance >= amount){
-    balance -= amount
-    console.log("Transaction Succesfull, balance is " + balance);
-    
+// Question 1
+let tA = 96 + 108 + 89;
+let tB = 88 + 91 + 110;
+let avgA = tA / 3;
+let avgB = tB / 3;
+
+if (avgA > avgB) {
+  console.log(`Team A has scored the highest ${avgA}`);
+} else if (avgB > avgA) {
+  console.log(`Team B has scored the highest ${avgB} `);
+} else {
+  console.log("Its a TIE");
 }
 
-//determine if the password is long enough (>= 10)
-const password = "password15#"
-if (password.length >= 10 && password.includes("#")){
-    console.log('passowd is good enough');
-}
+// Question 2
+let item1 = 120;
+let item2 = 80;
+let item3 = 150;
+let totalcost = item1 + item2 + item3;
+let accountBal = 400;
+accountBal >= totalcost
+  ? console.log("Transaction succesful")
+  : console.log("insufficient funds");
 
-const age = 18 
-if (age >= 18){
-    console.log('You are eligable to vote');
-}
-//if else 
-    if (9 > 7){
-        console.log("YES")
-    } else{
-        console.log("NO");
-    }
-    if (balance >= amount) {
-      balance -= amount;
-      console.log("Transaction Succesfull, balance is " + balance);
-    } else{
-        console.log("Insufficient Funds");
-    }
+// Question 3
+const movieage = 18;
+const userage = 16;
+userage >= movieage
+  ? console.log("You can watch this movie")
+  : console.log("You are not old enouhg to whatch this movie");
 
-    const num = 45
-    if (num > 0){
-        console.log("Possitive");
-    } else{
-        console.log("Negative");
-    }
-
-    const number = 24
-    if (number % 2 == 0 ){
-        console.log("Even number");
-    } else {
-        console.log("Odd number");
-    }
-
-    // multiple else if statement
-    // over populated >= 300, under populated <= 50 and balanced > 50 and < 300
-    const censusResult = 50.1;
-
-    if (censusResult >= 300){
-        console.log("OVER POPULATED");
-    } else if(censusResult <= 50){
-        console.log("UNDER POPULATED");
-    } else{
-        console.log("BALANCED POPULATION");
-    }
-
-    // lotery system for a company a b c(winner) 
-    const usersChoiceA = "a"
-    if (usersChoiceA === "c"){
-        console.log("CONGRATULATIONS");
-    } else{
-        console.log("TRY AGAIN");
-    }
-
-    const usersChoiceB= "a"
-    if (usersChoiceB === "a"){
-        console.log("TRIP TO DUBAI");
-    } else if (usersChoiceB === "c"){
-        console.log("CAR");
-    } else if (usersChoiceB === "d"){
-        console.log(BLENDER);
-    } else{
-        console.log("TRY AGAIN");
-    }
+// Question 4
+const ticketPrice = 150;
+const discountAmount = 30;
+const balance = 5000;
+const isAFan = true;
+const fanprice = ticketPrice - discountAmount;
+isAFan
+  ? console.log(`you are paying ${discountAmount}`)
+  : console.log(`you are paying ${ticketPrice}`);
+balance >= discountAmount || balance >= ticketPrice
+  ? console.log("You can buy the football ticket")
+  : console.log(" You do not have enough money for the football ticket");
