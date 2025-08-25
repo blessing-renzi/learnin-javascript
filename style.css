@@ -1,0 +1,12 @@
+.success{
+    border: 2px solid green;
+}
+.error{
+    border: 2px solid red;
+}
+.msg {
+    text-align: center;
+}
+input{
+    outline: none;
+}
